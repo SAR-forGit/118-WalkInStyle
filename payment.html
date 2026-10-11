@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment/118 - Walk in Style</title>
+  <script src="https://kit.fontawesome.com/e6ec7293db.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="img/png" href="./PicsArt_08-24-04.29.31.png">
+</head>
+
+<body>
+
+  <section class="notificationTopBar">
+  <p>FREE RETURNS AND EXCHANGES</p>
+</section>
+
+<header>
+  <nav class="navbar">
+    <a class="logo" href="index.html"><img src="./PicsArt_08-24-04.29.31.png" alt=""></a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="products.html">Products</a>
+      <div class="iconHolder">
+        <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+      </div>
+      <div class="iconHolder">
+        <a href="./products.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+      </div>
+      <div class="iconHolder">
+        <i class="fa-regular fa-user"></i>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<section class="cartPageMain">
+  <section class="cart_Section_Header">
+    <div class="cart_Section_HeaderText">
+      <h1>CHECKOUT</h1>
+      <p>1 item</p>
+    </div>
+    <p>Payment Details</p>
+  </section>
+
+  <div class="checkout-layout">
+    <form id="payment-form" class="payment-form">
+      <h2>Customer Information</h2>
+
+      <label>Full Name
+        <input type="text" id="name" placeholder="Enter your full name">
+      </label>
+      <label>Email
+        <input type="email" id="email" placeholder="example@email.com">
+      </label>
+      <label>Phone Number
+        <input type="tel" id="phone" placeholder="10 digit mobile number" maxlength="10">
+      </label>
+      <label>Delivery Address
+        <textarea id="address" placeholder="Enter your complete address"></textarea>
+      </label>
+
+      <h2>Card Information</h2>
+      <label>Card Number
+        <input type="text" id="card" placeholder="16 digit card number" maxlength="16">
+      </label>
+      <div class="two-inputs">
+        <label>Expiry Date
+          <input type="text" id="expiry" placeholder="MM/YY" maxlength="5">
+        </label>
+        <label>CVV
+          <input type="password" id="cvv" placeholder="3 digits" maxlength="3">
+        </label>
+      </div>
+
+      <p id="payment-message" class="message"></p>
+
+      <div class="PaymentButtons">
+        <a href="./cart.html" class="PaymentButtonGoBack">
+          <i class="fa-solid fa-chevron-left"></i>
+        </a>
+        <button type="submit" class="PaymentButtonPlaceOrder">Place Order</button>
+      </div>
+    </form>
+
+  </div>
+</main>
+</section>
+
+<script src="js/script.js?v=3"></script>
+<footer><p>© 2026 118 | AAT-1 Full Stack Web Development</p></footer>
+</body>
+</html>
